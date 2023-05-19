@@ -8,10 +8,25 @@
     <title>Spock-Game</Spock-Game></title>
 </head>
 <body>
-    <h1>Rock, Paper, Scissor, Lizard, Spock Game</h1>
+    <h1>Rock, Paper, Scissors, Lizard, Spock Game</h1>
     <div class="game-container">
         <div class="image-container">
-
+            <img class="btn-red" src="assets/images/icon-rock.svg" alt="rock">
+            <img class="btn-yellow" src="assets/images/icon-paper.svg" alt="paper">
+            <img class="btn-blue" src="assets/images/icon-scissors.svg" alt="scissors">
+            <img class="btn-green" src="assets/images/icon-lizard.svg" alt="lizard">
+            <img class="btn-orange" src="assets/images/icon-spock.svg" alt="spock">
+        </div>
+        <h2>Matches: <span id="matches-counter">0</span> of 5</h2>
+        <div id="game-field">
+            <h3>Player Score: <span id="player-score">0</span></h3>
+            <img id="Player-hand" src="assets/images/icon-rock.svg" alt="player hand">
+            <h1>VS</h1>
+            <img id="computer-hand" src="assets/images/icon-rock.svg" alt="computer hand">
+            <h3>Computer Score: <span id="computer-score">0</span></h3>
+        </div>
+        <div id="rule-footer">
+            <h2><span id="winner-rule-point"></span></h2>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
