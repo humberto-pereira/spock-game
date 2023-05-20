@@ -8,11 +8,11 @@
 }
 
 body {
-    background-color: #4E6E81;
+    background-color: #ffffff;
 }
 
 .title {
-    color: #F8F5E4;
+    color: #000000;
     margin-top: 3%;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
@@ -20,7 +20,6 @@ body {
 
 .btn-red {
     padding: 15px;
-    color: #F8F5E4;
     width: 100px;
     border-radius: 50%;
     border: solid 3px red;
@@ -29,9 +28,32 @@ body {
 
 .btn-green {
     padding: 15px;
-    color: #F8F5E4;
-    width: 100px;
+    max-width: 100px;
     border-radius: 50%;
     border: solid 3px green;
     background: darkgreen;
+}
+
+.btn-yellow {
+    padding: 15px;
+    max-width: 100px;
+    border-radius: 50%;
+    border: solid 3px yellow;
+    background: rgb(252, 210, 0);
+}
+
+.btn-blue {
+    padding: 15px;
+    max-width: 100px;
+    border-radius: 50%;
+    border: solid 3px blue;
+    background: darkblue;
+}
+
+.btn-orange {
+    padding: 18px;
+    max-width: 100px;
+    border-radius: 50%;
+    border: solid 3px orange;
+    background: darkorange;
 }
