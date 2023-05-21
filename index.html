@@ -10,6 +10,9 @@
 <body>
     <h1 class="title">Rock, Paper, Scissors, Lizard, Spock Game</h1>
     <div class="game-container">
+        <div id="rules">
+            <h2><span id="winner-rule-point">It's a tie: score  0</span></h2>
+        </div>
         <div id="game-field">
             <h3>Player Score: <span id="player-score">0</span></h3>
             <img id="Player-hand" src="assets/images/icon-rock-player.svg" alt="player hand">
@@ -17,16 +20,13 @@
             <img id="computer-hand" src="assets/images/icon-rock-coputer.svg" alt="computer hand">
             <h3>Computer Score: <span id="computer-score">0</span></h3>
         </div>
+        <h2 id="matches">Matches: <span id="matches-counter">0</span> of 5</h2>
         <div class="btn-container">
             <img class="btn-red" src="assets/images/icon-rock-player.svg" alt="rock">
             <img class="btn-yellow" src="assets/images/icon-paper-player.svg" alt="paper">
             <img class="btn-blue" src="assets/images/icon-scissors-player.svg" alt="scissors">
             <img class="btn-green" src="assets/images/icon-lizard-player.svg" alt="lizard">
             <img class="btn-orange" src="assets/images/icon-spock-player.svg" alt="spock">
-        </div>
-        <h2>Matches: <span id="matches-counter">0</span> of 5</h2>
-        <div id="rule-footer">
-            <h2><span id="winner-rule-point"></span></h2>
         </div>
     </div>
     <script src="assets/js/script.js"></script>

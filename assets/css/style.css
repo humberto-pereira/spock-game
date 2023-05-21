@@ -5,55 +5,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
 }
 
 body {
-    background-color: #ffffff;
+    background-image: linear-gradient(to right, #1f3756, #1653a3 )
 }
 
 .title {
-    color: #000000;
-    margin-top: 3%;
-    font-family: 'Bebas Neue', sans-serif;
+    margin: 3% 0 14% 0;
+    text-align: center;
+    
+}
+
+#rules {
+text-align: center;
+}
+
+#matches {
     text-align: center;
 }
 
-.btn-red {
-    padding: 15px;
-    width: 100px;
-    border-radius: 50%;
-    border: solid 3px red;
-    background: darkred;
+/* buttons */
+.btn-container {
+    box-shadow: 10px 5px 5px #000000;
+    border-radius: 10%;
+    background-color: #1653a3;
+    border: solid 10px #122a49;
+    margin: 25px auto;
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
 }
 
-.btn-green {
-    padding: 15px;
-    max-width: 100px;
-    border-radius: 50%;
-    border: solid 3px green;
-    background: darkgreen;
-}
+/* Player field */
 
-.btn-yellow {
-    padding: 15px;
-    max-width: 100px;
-    border-radius: 50%;
-    border: solid 3px yellow;
-    background: rgb(252, 210, 0);
-}
-
-.btn-blue {
-    padding: 15px;
-    max-width: 100px;
-    border-radius: 50%;
-    border: solid 3px blue;
-    background: darkblue;
-}
-
-.btn-orange {
-    padding: 18px;
-    max-width: 100px;
-    border-radius: 50%;
-    border: solid 3px orange;
-    background: darkorange;
+#game-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3% 0 17% 0;
 }
