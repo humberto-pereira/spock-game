@@ -34,7 +34,7 @@ text-align: center;
     background-color: #1653a3;
     border: solid 10px #122a49;
     margin: 25px auto;
-    width: 50%;
+    max-width: 50%;
     display: flex;
     justify-content:space-around;
 }
@@ -46,4 +46,8 @@ text-align: center;
     align-items: center;
     justify-content: space-around;
     margin: 3% 0 17% 0;
+}
+
+.btn-hover:hover {
+    background:#fefffd;
 }
