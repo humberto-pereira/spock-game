@@ -42,8 +42,14 @@ text-align: center;
     justify-content:space-around;
 }
 
+.btn-hover{
+    all: unset;
+    cursor: pointer;
+}
+
+
 .btn-hover:hover {
-    background:#fefffd;
+    background-color:#fefffd;
 }
 
 /* Player field */
@@ -67,7 +73,7 @@ text-align: center;
 
 /* media query */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 320px) {
     .btn-container {
         margin-top: 20%;
         max-width: 95%;
