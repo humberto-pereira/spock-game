@@ -52,23 +52,25 @@ text-align: center;
     background-color:#fefffd;
 }
 
-/* Player field */
+/* Game field */
 
 #game-field {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3% 0 13% 0;
+    margin: 3% 0 10% 0;
 }
 
-#player-hand {
+#player-hand img {
+    width: 90px;
     margin-bottom: 23.766px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
-#computer-hand {
+#computer-hand img {
+    width: 90px;
     margin-bottom: 23.766px;
-    margin-left: 33px;
+    margin-left: 10px;
 }
 
 /* media query */
