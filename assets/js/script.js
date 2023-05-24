@@ -81,4 +81,21 @@ function checkWinner(playerChoice, computerChoice) {
         
 }
 
+function displayGameImage(playerChoice, computerChoice) {
+    let imageDictionary = {
+        rockPlayer: "assets/images/icon-rock-player.svg",
+        scissorsPlayer:"assets/images/scissor-rock-player.svg",
+        paperPlayer:"assets/images/icon-paper-player.svg",
+        lizardPlayer:"assets/images/icon-lizard-player.svg",
+        spockPlayer:"assets/images/icon-spock-player.svg",
 
+        rockComputer: "assets/images/icon-rock-computer.svg",
+        scissorsComputer:"assets/images/scissor-rock-computer.svg",
+        paperComputer:"assets/images/icon-paper-computer.svg",
+        lizardComputer:"assets/images/icon-lizard-computer.svg",
+        spockComputer:"assets/images/icon-spock-computer.svg",
+    }
+    
+}
+let debug = displayGameImage.rockPlayer
+    console.log(debug);
