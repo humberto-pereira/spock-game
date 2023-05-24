@@ -6,22 +6,23 @@ document.addEventListener("DOMContentLoaded", function() {
     let clickedButtons = document.getElementsByTagName("button");
     for (let button of clickedButtons) {
         button.addEventListener("click", function(){
+        // Pass both variables as arguments to the checkWinner() function    
         let playerChoice = this.getAttribute("data-type");
         let computerChoice = generateComputerChoice();
         checkWinner(playerChoice, computerChoice);
-        // alert(playerChoice)
         })      
     }
 })
 
 function generateComputerChoice() {
-    let computerChoice = ["rock-computer", "lizard-computer", "paper-computer", "scissors-computer", "spock-computer"];
-    let i = Math.floor(Math.random() * computerChoice.length);
-    let computerChoiceI = computerChoice[i];
-    return computerChoiceI;
+    let computerChoiceArray = ["rock-computer", "lizard-computer", "paper-computer", "scissors-computer", "spock-computer"];
+    let i = Math.floor(Math.random() * computerChoiceArray.length);
+    let computerChoiceI = computerChoiceArray[i];
+    return computerChoiceI
 }
 
 
+//Check playerChoice against computerChoice and return the winner or a tie
 function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice === "scissors-player" &&  computerChoice === "rock-computer") {
@@ -75,7 +76,7 @@ function checkWinner(playerChoice, computerChoice) {
         alert("player win: Spock vaporizes rock");
     
     } else {
-        alert("No winner: it's a tie");
+        alert(`No winner: it's a tie ${playerChoice} and ${computerChoice}`);
     }
         
 }
