@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Pass both variables as arguments to the checkWinner() function    
         let playerChoice = this.getAttribute("data-type");
         let computerChoice = generateComputerChoice();
+        displayGameImage(playerChoice, computerChoice);
         checkWinner(playerChoice, computerChoice);
         })      
     }
@@ -84,18 +85,43 @@ function checkWinner(playerChoice, computerChoice) {
 function displayGameImage(playerChoice, computerChoice) {
     let imageDictionary = {
         rockPlayer: "assets/images/icon-rock-player.svg",
-        scissorsPlayer:"assets/images/scissor-rock-player.svg",
+        scissorsPlayer:"assets/images/icon-scissors-player.svg",
         paperPlayer:"assets/images/icon-paper-player.svg",
         lizardPlayer:"assets/images/icon-lizard-player.svg",
         spockPlayer:"assets/images/icon-spock-player.svg",
 
         rockComputer: "assets/images/icon-rock-computer.svg",
-        scissorsComputer:"assets/images/scissor-rock-computer.svg",
+        scissorsComputer:"assets/images/icon-scissors-computer.svg",
         paperComputer:"assets/images/icon-paper-computer.svg",
         lizardComputer:"assets/images/icon-lizard-computer.svg",
         spockComputer:"assets/images/icon-spock-computer.svg",
     }
-    
+    let playerImageElement = document.getElementById("player-hand");
+    let computerImageElement = document.getElementById("computer-hand");
+    if (playerChoice === "scissors-player") {
+        playerImageElement.src = imageDictionary.scissorsPlayer;
+    } else if (playerChoice === "rock-player") {
+        playerImageElement.src = imageDictionary.rockPlayer;
+    } else if (playerChoice === "paper-player") {
+        playerImageElement.src = imageDictionary.paperPlayer;
+    } else if (playerChoice === "lizard-player") {
+        playerImageElement.src = imageDictionary.lizardPlayer;
+    } else if (playerChoice === "spock-player") {
+        playerImageElement.src = imageDictionary.spockPlayer;
+    }
+
+    if (computerChoice === "scissor-computer") {
+        computerImageElement.src = imageDictionary.scissorsComputer;
+    } else if (computerChoice === "rock-player") {
+        computerImageElement.src = imageDictionary.rockComputer;
+    } else if (computerChoice === "paper-computer") {
+        computerImageElement.src = imageDictionary.paperComputer;
+    } else if (computerChoice === "lizard-computer") {
+        computerImageElement.src = imageDictionary.lizardComputer;
+    } else if (computerChoice === "spock-computer") {
+        computerImageElement.src = imageDictionary.spockComputer;
+    }
 }
-let debug = displayGameImage.rockPlayer
+
+let debug = imageDictionary.rockPlayer
     console.log(debug);

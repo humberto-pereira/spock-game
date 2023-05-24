@@ -61,13 +61,13 @@ text-align: center;
     margin: 3% 0 10% 0;
 }
 
-#player-hand img {
+#player-hand {
     width: 90px;
     margin-bottom: 23.766px;
     margin-left: 10px;
 }
 
-#computer-hand img {
+#computer-hand {
     width: 90px;
     margin-bottom: 23.766px;
     margin-left: 10px;
