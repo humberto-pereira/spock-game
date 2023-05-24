@@ -5,22 +5,22 @@
 document.addEventListener("DOMContentLoaded", function() {
     let clickedButtons = document.getElementsByTagName("button");
     for (let button of clickedButtons) {
-        function playerChoiceFunction () {
-            button.addEventListener("click", function(){
-            let playerChoice = this.getAttribute("data-type");
-            checkWinner(playerChoice);
-            })
-        }      
+        button.addEventListener("click", function(){
+        let playerChoice = this.getAttribute("data-type");
+        let computerChoice = generateComputerChoice();
+        checkWinner(playerChoice, computerChoice);
+        // alert(playerChoice)
+        })      
     }
-    checkWinner();
 })
 
 function generateComputerChoice() {
     let computerChoice = ["rock-computer", "lizard-computer", "paper-computer", "scissors-computer", "spock-computer"];
     let i = Math.floor(Math.random() * computerChoice.length);
-    computerChoice = computerChoice[i];
-    checkWinner(computerChoice);
+    let computerChoiceI = computerChoice[i];
+    return computerChoiceI;
 }
+
 
 function checkWinner(playerChoice, computerChoice) {
 
