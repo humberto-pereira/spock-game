@@ -26,58 +26,60 @@ function generateComputerChoice() {
 //Check playerChoice against computerChoice and return the winner or a tie
 function checkWinner(playerChoice, computerChoice) {
 
+    let ruleElement = document.getElementById("winner-rule-point");
+
     if (playerChoice === "scissors-player" &&  computerChoice === "rock-computer") {
-        alert("computer win: Rock crushes scissors");
+        ruleElement.textContent = "computer win: Rock crushes scissors! Score + 1.";
     } else if (playerChoice === "rock-player" && computerChoice === "scissors-computer") {
-        alert("player win: Rock crushes scissors");
+        ruleElement.textContent = "player win: Rock crushes scissors! Score + 1.";
 
     } else if (playerChoice === "paper-player" && computerChoice === "scissors-computer") {
-        alert("computer win: Scissors cut paper");
+        ruleElement.textContent = "computer win: Scissors cut paper! Score + 1.";
     } else if (playerChoice === "scissors-player" && computerChoice === "paper-computer") {
-        alert("player win: Scissors cut paper");
+        ruleElement.textContent = "player win: Scissors cut paper! Score + 1.";
     
     } else if (playerChoice === "rock-player" && computerChoice === "paper-computer") {
-        alert("computer win: Paper covers rock");
+        ruleElement.textContent = "computer win: Paper covers rock! Score + 1.";
     } else if (playerChoice === "paper-player" && computerChoice === "rock-computer") {
-        alert("player win: Paper covers rock");
+        ruleElement.textContent = "player win: Paper covers rock! Score + 1.";
     
     } else if (playerChoice === "lizard-player" && computerChoice === "rock-computer") {
-        alert("computer win: rock crushes lizard");
+        ruleElement.textContent = "computer win: rock crushes lizard! Score + 1.";
     } else if (playerChoice === "rock-player" && computerChoice === "lizard-computer") {
-        alert("player win: rock crushes lizard");
+        ruleElement.textContent = "player win: rock crushes lizard! Score + 1.";
     
     } else if (playerChoice === "spock-player" && computerChoice === "lizard-computer") {
-        alert("computer win: Lizard poisons Spock");
+        ruleElement.textContent = "computer win: Lizard poisons Spock! Score + 1.";
     } else if (playerChoice === "lizard-player" && computerChoice === "spock-computer") {
-        alert("player win: Lizard poisons Spock");
+        ruleElement.textContent = "player win: Lizard poisons Spock! Score + 1.";
     
     } else if (playerChoice === "scissors-player" && computerChoice === "spock-computer") {
-        alert("computer win: Spock smashes scissors");
+        ruleElement.textContent = "computer win: Spock smashes scissors! Score + 1.";
     } else if (playerChoice === "spock-player" && computerChoice === "scissors-computer") {
-        alert("player win: Spock smashes scissors");
+        ruleElement.textContent = "player win: Spock smashes scissors! Score + 1.";
     
     } else if (playerChoice === "lizard-player" && computerChoice === "scissors-computer") {
-        alert("computer win: Scissors decapitate lizard");
+        ruleElement.textContent = "computer win: Scissors decapitate lizard! Score + 1.";
     } else if (playerChoice === "scissors-player" && computerChoice === "lizard-computer") {
-        alert("player win: Scissors decapitate lizard");
+        ruleElement.textContent = "player win: Scissors decapitate lizard! Score + 1.";
     
     } else if (playerChoice === "paper-player" && computerChoice === "lizard-computer") {
-        alert("computer win: Lizard eats paper");
+        ruleElement.textContent = "computer win: Lizard eats paper! Score + 1.";
     } else if (playerChoice === "lizard-player" && computerChoice === "paper-computer") {
-        alert("player win: Lizard eats paper");
+        ruleElement.textContent = "player win: Lizard eats paper! Score + 1.";
     
     } else if (playerChoice === "spock-player" && computerChoice === "paper-computer") {
-        alert("computer win: Paper disproves Spock");
+        ruleElement.textContent = "computer win: Paper disproves Spock! Score + 1.";
     } else if (playerChoice === "paper-player" && computerChoice === "spock-computer") {
-        alert("player win: Paper disproves Spock");
+        ruleElement.textContent = "player win: Paper disproves Spock! Score + 1.";
     
     } else if (playerChoice === "rock-player" && computerChoice === "spock-computer") {
-        alert("computer win: Spock vaporizes rock");
+        ruleElement.textContent = "computer win: Spock vaporizes rock! Score + 1.";
     } else if (playerChoice === "spock-player" && computerChoice === "rock-computer") {
-        alert("player win: Spock vaporizes rock");
+        ruleElement.textContent = "player win: Spock vaporizes rock! Score + 1.";
     
     } else {
-        alert(`No winner: it's a tie ${playerChoice} and ${computerChoice}`);
+        ruleElement.textContent = `No winner: it's a tie ${playerChoice} and ${computerChoice}! Score + 0.`;
     }
         
 }
@@ -110,9 +112,9 @@ function displayGameImage(playerChoice, computerChoice) {
         playerImageElement.src = imageDictionary.spockPlayer;
     }
 
-    if (computerChoice === "scissor-computer") {
+    if (computerChoice === "scissors-computer") {
         computerImageElement.src = imageDictionary.scissorsComputer;
-    } else if (computerChoice === "rock-player") {
+    } else if (computerChoice === "rock-computer") {
         computerImageElement.src = imageDictionary.rockComputer;
     } else if (computerChoice === "paper-computer") {
         computerImageElement.src = imageDictionary.paperComputer;
