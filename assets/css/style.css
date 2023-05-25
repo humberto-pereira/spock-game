@@ -73,6 +73,14 @@ text-align: center;
     margin-left: 10px;
 }
 
+.winner-player {
+    color: lightgreen
+}
+
+.winner-computer {
+    color: orange;
+}
+
 /* media query */
 
 @media screen and (max-width: 912px) {

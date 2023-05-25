@@ -33,75 +33,117 @@ function checkWinner(playerChoice, computerChoice) {
     if (playerChoice === "scissors-player" &&  computerChoice === "rock-computer") {
         ruleElement.textContent = "computer win:  Rock crushes scissors!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
-    } else if (playerChoice === "rock-player" && computerChoice === "scissors-computer") {
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
+        } else if (playerChoice === "rock-player" && computerChoice === "scissors-computer") {
         ruleElement.textContent = "player win:  Rock crushes scissors!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
 
     } else if (playerChoice === "paper-player" && computerChoice === "scissors-computer") {
         ruleElement.textContent = "computer win:  Scissors cut paper!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "scissors-player" && computerChoice === "paper-computer") {
         ruleElement.textContent = "player win:  Scissors cut paper!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "rock-player" && computerChoice === "paper-computer") {
         ruleElement.textContent = "computer win:  Paper covers rock!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "paper-player" && computerChoice === "rock-computer") {
         ruleElement.textContent = "player win:  Paper covers rock!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "lizard-player" && computerChoice === "rock-computer") {
         ruleElement.textContent = "computer win:  rock crushes lizard!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "rock-player" && computerChoice === "lizard-computer") {
         ruleElement.textContent = "player win:  rock crushes lizard!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "spock-player" && computerChoice === "lizard-computer") {
         ruleElement.textContent = "computer win:  Lizard poisons Spock!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "lizard-player" && computerChoice === "spock-computer") {
         ruleElement.textContent = "player win:  Lizard poisons Spock!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "scissors-player" && computerChoice === "spock-computer") {
         ruleElement.textContent = "computer win:  Spock smashes scissors!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "spock-player" && computerChoice === "scissors-computer") {
         ruleElement.textContent = "player win:  Spock smashes scissors!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "lizard-player" && computerChoice === "scissors-computer") {
         ruleElement.textContent = "computer win:  Scissors decapitate lizard!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "scissors-player" && computerChoice === "lizard-computer") {
         ruleElement.textContent = "player win:  Scissors decapitate lizard!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "paper-player" && computerChoice === "lizard-computer") {
         ruleElement.textContent = "computer win:  Lizard eats paper!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "lizard-player" && computerChoice === "paper-computer") {
         ruleElement.textContent = "player win:  Lizard eats paper!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "spock-player" && computerChoice === "paper-computer") {
         ruleElement.textContent = "computer win:  Paper disproves Spock!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "paper-player" && computerChoice === "spock-computer") {
         ruleElement.textContent = "player win:  Paper disproves Spock!  PlayerScore: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else if (playerChoice === "rock-player" && computerChoice === "spock-computer") {
         ruleElement.textContent = "computer win:  Spock vaporizes rock!  Computer Score: + 1.";
         scoreComputer.textContent = parseInt(scoreComputer.textContent) + 1;
+        ruleElement.classList.remove("winner-player");
+        ruleElement.classList.add("winner-computer");
     } else if (playerChoice === "spock-player" && computerChoice === "rock-computer") {
         ruleElement.textContent = "player win:  Spock vaporizes rock!  Player Score: + 1.";
         scorePlayer.textContent = parseInt(scorePlayer.textContent) + 1;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.add("winner-player");
     
     } else {
         ruleElement.textContent = `No winner:  it's a tie: ${playerChoice} and ${computerChoice}!  Score: + 0.`;
+        ruleElement.classList.remove("winner-computer");
+        ruleElement.classList.remove("winner-player");
     }
         
 }
