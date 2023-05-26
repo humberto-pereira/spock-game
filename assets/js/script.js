@@ -189,5 +189,3 @@ function displayGameImage(playerChoice, computerChoice) {
     }
 }
 
-let debug = imageDictionary.rockPlayer
-    console.log(debug);
