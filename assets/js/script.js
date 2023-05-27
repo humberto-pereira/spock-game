@@ -19,7 +19,7 @@ function generateComputerChoice() {
     let computerChoiceArray = ["rock-computer", "lizard-computer", "paper-computer", "scissors-computer", "spock-computer"];
     let i = Math.floor(Math.random() * computerChoiceArray.length);
     let computerChoiceI = computerChoiceArray[i];
-    return computerChoiceI
+    return computerChoiceI;
 }
 
 
@@ -191,22 +191,38 @@ function displayGameImage(playerChoice, computerChoice) {
     }
 }
 
-function resetGame() {
-
-}
-
 
 function calculateTheWinner() {
     let numberOfMatchesCalculate = parseInt(document.getElementById("matches-counter").textContent);
     let scorePlayerCalculate = parseInt(document.getElementById("player-score").textContent);
     let scoreComputerCalculate = parseInt(document.getElementById("computer-score").textContent);
     let winnerRuleElement = document.getElementById("winner-rule-point");
-    if (numberOfMatchesCalculate === 5 && scorePlayerCalculate > scoreComputerCalculate) {
+
+    if (numberOfMatchesCalculate >= 5 && scorePlayerCalculate > scoreComputerCalculate) {
         winnerRuleElement.textContent = "Congratulations Player Wins!!! =)"
-    } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate < scoreComputerCalculate) {
+        alert("New Game?");
+        resetGame();
+    } else if (numberOfMatchesCalculate >= 5 && scorePlayerCalculate < scoreComputerCalculate) {
         winnerRuleElement.textContent = "Computer Wins... =("
-    } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate === scoreComputerCalculate) {
+        alert("New Game?");
+        resetGame();
+    } else if (numberOfMatchesCalculate >= 5 && scorePlayerCalculate === scoreComputerCalculate) {
         winnerRuleElement.textContent = "It's a Tie No Winner!"
+        alert("New Game?");
+        resetGame();
     }
 
+}
+
+function resetGame() {
+    
+    //Reset winner rule point
+    document.getElementById("winner-rule-point").textContent = "Welcome to Spock Game! Let's Play?";
+    //Reset game score
+    document.getElementById("player-score").textContent = 0;
+    //Reset computer score
+    document.getElementById("computer-score").textContent = 0;
+    //Reset matches counter
+    document.getElementById("matches-counter").textContent = 0;
+    
 }
