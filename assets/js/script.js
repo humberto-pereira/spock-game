@@ -29,6 +29,8 @@ function checkWinner(playerChoice, computerChoice) {
     let ruleElement = document.getElementById("winner-rule-point");
     let scorePlayer = document.getElementById("player-score")
     let scoreComputer = document.getElementById("computer-score")
+    let numberOfMatches = document.getElementById("matches-counter")
+    numberOfMatches.textContent = parseInt(numberOfMatches.textContent) +1
 
     if (playerChoice === "scissors-player" &&  computerChoice === "rock-computer") {
         ruleElement.textContent = "computer win:  Rock crushes scissors!  Computer Score: + 1.";
@@ -145,7 +147,7 @@ function checkWinner(playerChoice, computerChoice) {
         ruleElement.classList.remove("winner-computer");
         ruleElement.classList.remove("winner-player");
     }
-        
+    calculateTheWinner();      
 }
 
 function displayGameImage(playerChoice, computerChoice) {
@@ -189,3 +191,22 @@ function displayGameImage(playerChoice, computerChoice) {
     }
 }
 
+function resetGame() {
+
+}
+
+
+function calculateTheWinner() {
+    let numberOfMatchesCalculate = parseInt(document.getElementById("matches-counter").textContent);
+    let scorePlayerCalculate = parseInt(document.getElementById("player-score").textContent);
+    let scoreComputerCalculate = parseInt(document.getElementById("computer-score").textContent);
+    let winnerRuleElement = document.getElementById("winner-rule-point");
+    if (numberOfMatchesCalculate === 5 && scorePlayerCalculate > scoreComputerCalculate) {
+        winnerRuleElement.textContent = "Congratulations Player Wins!!! =)"
+    } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate < scoreComputerCalculate) {
+        winnerRuleElement.textContent = "Computer Wins... =("
+    } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate === scoreComputerCalculate) {
+        winnerRuleElement.textContent = "It's a Tie No Winner!"
+    }
+
+}
