@@ -88,6 +88,13 @@ text-align: center;
 .player-score-green {
     color: lightgreen;
 }
+
+#the-winner {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
 /* media query */
 
 @media screen and (max-width: 912px) {
