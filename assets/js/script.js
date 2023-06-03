@@ -256,7 +256,13 @@ function calculateTheWinner() {
 function resetGame() {
 
     //Reset winner rule point
-    document.getElementById("winner-rule-point").textContent = "Welcome to Spock Game! Let's Play?";
+    let resetWinnerRule = document.getElementById("winner-rule-point");
+    resetWinnerRule.textContent = "Welcome to Spock Game! Let's Play?";
+
+    //reset winner-rule-point color
+    resetWinnerRule.classList.remove("winner-player");
+    resetWinnerRule.classList.remove("winner-computer");
+
     //Reset player score
     document.getElementById("player-score").textContent = 0;
     //Reset computer score
@@ -268,6 +274,7 @@ function resetGame() {
     //Reset images
     let playerImageReset = document.getElementById("player-hand");
     playerImageReset.src = "assets/images/icon-rock-player.svg";
+
     let computerImageReset= document.getElementById("computer-hand");
     computerImageReset.src = "assets/images/icon-rock-computer.svg";
 }
