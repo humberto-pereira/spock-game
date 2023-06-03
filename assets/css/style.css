@@ -52,24 +52,81 @@ text-align: center;
     background-color:#fefffd;
 }
 
+/*animation code taken from: youtube Code Grind channel more details and link at readme.md*/
+
+@keyframes shake-computer {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+
+}
+
+@keyframes shake-player {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+
+}
+
 /* Game field */
 
 #game-field {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 3% 0 10% 0;
+    margin: 45px 0 149.7px 0;
 }
+
+.shake-player {
+    animation: shake-player 1s linear;
+}
+
+.shake-computer {
+    animation: shake-computer 1s linear;
+}
+
 
 #player-hand {
     width: 90px;
-    margin-bottom: 23.766px;
+    margin-bottom: 23.76px;
     margin-left: 10px;
 }
 
 #computer-hand {
     width: 90px;
-    margin-bottom: 23.766px;
+    margin-bottom: 23.76px;
     margin-left: 10px;
 }
 
@@ -90,8 +147,9 @@ text-align: center;
 }
 
 #the-winner {
+    font-size: 32px;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
 
