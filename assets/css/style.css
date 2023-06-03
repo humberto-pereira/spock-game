@@ -157,11 +157,11 @@ text-align: center;
 
 @media screen and (max-width: 912px) {
     .title {
-        margin: 10% 0 40% 0;
+        margin: 10% 0 20% 0;
     }
     
     .btn-container {
-        margin-top: 35%;
+        margin-top: 15%;
         max-width: 95%;
         box-shadow: none;
     }
@@ -169,11 +169,11 @@ text-align: center;
 
 @media screen and (max-width: 768px) {
     .title {
-        margin: 5% 0 40% 0;
+        margin: 5% 0 20% 0;
     }
     
     .btn-container {
-        margin-top: 30%;
+        margin-top: 20%;
         max-width: 95%;
         box-shadow: none;
     }
@@ -181,11 +181,11 @@ text-align: center;
 
 @media screen and (max-width: 540px) {
     .title {
-        margin: 5% 0 30% 0;
+        margin: 5% 0 20% 0;
     }
     
     .btn-container {
-        margin-top: 25%;
+        margin-top: 20%;
         max-width: 95%;
         box-shadow: none;
     }
@@ -193,11 +193,11 @@ text-align: center;
 
 @media screen and (max-width: 414px) {
     .title {
-        margin: 10% 0 50% 0;
+        margin: 10% 0 25% 0;
     }
     
     .btn-container {
-        margin-top: 55%;
+        margin-top: 10%;
         max-width: 95%;
         box-shadow: none;
     }
@@ -205,13 +205,22 @@ text-align: center;
 
 @media screen and (max-width: 375px) {
     .title {
-        margin: 10% 0 30% 0;
+        margin: 10% 0 15% 0;
     }
     
     .btn-container {
-        margin-top: 32%;
+        margin-top: 5%;
         max-width: 95%;
         box-shadow: none;
+    }
+
+    #the-winner {
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+
+    #game-field {
+        margin: 40px 0px 40px 0px;
     }
 }
 

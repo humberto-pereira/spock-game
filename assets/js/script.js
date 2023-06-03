@@ -226,7 +226,7 @@ function calculateTheWinner() {
         theWinner.classList.add("winner-player");
         playerImageShake.classList.remove("shake-player");
         computerImageShake.classList.remove("shake-computer");
-        theWinnerNoResize.style.margin = "40px 0 107px 0"
+        // theWinnerNoResize.style.margin = "40px 0 107px 0"
 
     } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate < scoreComputerCalculate) {
         theWinner.textContent = `Computer Wins... =( \xa0 Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
@@ -234,7 +234,7 @@ function calculateTheWinner() {
         theWinner.classList.add("winner-computer");
         playerImageShake.classList.remove("shake-player");
         computerImageShake.classList.remove("shake-computer");
-        theWinnerNoResize.style.margin = "40px 0 107px 0"
+        // theWinnerNoResize.style.margin = "40px 0 107px 0"
 
     } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate === scoreComputerCalculate) {
         theWinner.textContent = `It's a Tie No Winner! \xa0 Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
@@ -242,7 +242,7 @@ function calculateTheWinner() {
         theWinner.classList.remove("winner-player");
         playerImageShake.classList.remove("shake-player");
         computerImageShake.classList.remove("shake-computer");
-        theWinnerNoResize.style.margin = "40px 0 107px 0"
+        // theWinnerNoResize.style.margin = "40px 0 107px 0"
 
     }
 
