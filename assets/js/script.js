@@ -39,6 +39,8 @@ function generateComputerChoice() {
     return computerChoiceI;
 }
 
+// code based on Responsive Navbar Tutorial link and more details at readme.md
+
 function rulesMenu() {
     let rulesSpan = document.getElementsByClassName("rules-span")[0];
     let rulesList = document.getElementsByClassName("rules-list")[0];
