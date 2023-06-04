@@ -9,26 +9,27 @@ document.addEventListener("DOMContentLoaded", function () {
             // Pass both variables as arguments to the checkWinner() function
             let playerChoice = this.getAttribute("data-type");
             let computerChoice = generateComputerChoice();
-            
-            
+
+
             let playerImageShake = document.getElementById("player-hand");
             let computerImageShake = document.getElementById("computer-hand");
             playerImageShake.classList.add("shake-player");
             computerImageShake.classList.add("shake-computer");
-            
-            //Code from youtube Code Grind channel more details and link at readme.md
- 
+
+            //Code based on youtube "Code Grind channel" more details and link at readme.md
+
             setTimeout(() => {
-            playerImageShake.classList.remove("shake-player");
-            computerImageShake.classList.remove("shake-computer");
+                playerImageShake.classList.remove("shake-player");
+                computerImageShake.classList.remove("shake-computer");
 
-            displayGameImage(playerChoice, computerChoice);
-            checkWinner(playerChoice, computerChoice);
-            calculateTheWinner();
+                displayGameImage(playerChoice, computerChoice);
+                checkWinner(playerChoice, computerChoice);
+                calculateTheWinner();
 
-            }, 1001)    
+            }, 1001)
         })
     }
+    rulesMenu();
 })
 
 function generateComputerChoice() {
@@ -38,6 +39,14 @@ function generateComputerChoice() {
     return computerChoiceI;
 }
 
+function rulesMenu() {
+    let rulesSpan = document.getElementsByClassName("rules-span")[0];
+    let rulesList = document.getElementsByClassName("rules-list")[0];
+    rulesSpan.addEventListener("click", () => {
+        rulesList.classList.toggle("active");
+    })
+
+}
 
 //Check playerChoice against computerChoice and return the winner or a tie
 function checkWinner(playerChoice, computerChoice) {
@@ -275,7 +284,7 @@ function resetGame() {
     let playerImageReset = document.getElementById("player-hand");
     playerImageReset.src = "assets/images/icon-rock-player.svg";
 
-    let computerImageReset= document.getElementById("computer-hand");
+    let computerImageReset = document.getElementById("computer-hand");
     computerImageReset.src = "assets/images/icon-rock-computer.svg";
 }
 
