@@ -22,7 +22,13 @@ body {
 /* rules and matches interactive text */
 
 #rules {
-text-align: center;
+    text-align: center;
+}
+
+.rule-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 
 #matches {
@@ -158,6 +164,7 @@ text-align: center;
     width: 90px;
     margin-bottom: 23.76px;
     margin-left: 10px;
+    padding-top: 45px;
 }
 
 #computer-hand {
@@ -166,6 +173,11 @@ text-align: center;
     width: 90px;
     margin-bottom: 23.76px;
     margin-left: 10px;
+    padding-top: 45px;
+}
+
+#winner-rule-point {
+    position: absolute;
 }
 
 .winner-player {
@@ -185,7 +197,7 @@ text-align: center;
 }
 
 .the-winner-container {
-    padding-bottom: 5%;
+    padding: 4%;
     display: flex;
     justify-content: space-around;
     position:relative;
@@ -194,9 +206,8 @@ text-align: center;
 #the-winner {
     position: absolute;
     left: auto;
-    font-size: 32px;
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 0;
 }
 
 
@@ -208,7 +219,7 @@ text-align: center;
     }
     
     .btn-container {
-        margin-top: 15%;
+        margin-top: 7%;
         max-width: 95%;
         box-shadow: none;
     }
@@ -232,16 +243,24 @@ text-align: center;
     .rules-list li {
         font-size: 1.5rem;
         margin: .5rem;
+    }
+
+    .the-winner-container {
+        padding: 10% 0 15% 0;
+    }
+
+    #game-field {
+        margin: 15% 0 30% 0;
     }
 }
 
 @media screen and (max-width: 768px) {
     .title {
-        margin: 5% 0 20% 0;
+        margin: 5% 0 15% 0;
     }
     
     .btn-container {
-        margin-top: 20%;
+        margin-top: 5%;
         max-width: 95%;
         box-shadow: none;
     }
@@ -265,45 +284,21 @@ text-align: center;
     .rules-list li {
         font-size: 1.5rem;
         margin: .5rem;
+    }
+
+    .the-winner-container {
+        padding-bottom: 10%;
+    }
+
+    #game-field {
+        margin: 15% 0 30% 0;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .title {
-        margin: 5% 0 20% 0;
-    }
-    
-    .btn-container {
-        margin-top: 20%;
-        max-width: 95%;
-        box-shadow: none;
-    }
 
-    .toggle-button {
-        font-size: 2rem;
-        position: relative;
-        top: .75rem;
-        left: 1rem;
-        margin-bottom: 1.3em;
-    }
-    
-    .rules-list {
-        position: relative;
-        list-style: none;
-        margin-top: 1rem;
-        margin-left: 2rem;
-        display: none;
-    }
-    
-    .rules-list li {
-        font-size: 1.5rem;
-        margin: .5rem;
-    }
-}
-
-@media screen and (max-width: 414px) {
     .title {
-        margin: 10% 0 25% 0;
+        margin: 5% 0 5% 0;
     }
     
     .btn-container {
@@ -332,26 +327,26 @@ text-align: center;
         font-size: 1.5rem;
         margin: .5rem;
     }
+
+    /* .the-winner-container {
+        padding-bottom: 18%;
+    } */
+
+    #game-field {
+        margin: 10% 0 30% 0;
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
+    
     .title {
-        margin: 5% 0 12% 0;
+        margin: 10% 0 18% 0;
     }
     
     .btn-container {
-        margin-top: 5%;
+        margin-top: 7%;
         max-width: 95%;
         box-shadow: none;
-    }
-
-    #the-winner {
-        margin-bottom: 1em;
-        font-size: 1.2em;
-    }
-
-    #game-field {
-        margin: 40px 0px 40px 0px;
     }
 
     .toggle-button {
@@ -373,6 +368,56 @@ text-align: center;
     .rules-list li {
         font-size: 1.5rem;
         margin: .5rem;
+    }
+
+    .the-winner-container {
+        padding-bottom: 15%;
+    }
+
+    #game-field {
+        margin: 30% 0 40% 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .title {
+        margin: 10% 0 10% 0;
+    }
+    
+    .btn-container {
+        margin-top: 5%;
+        max-width: 95%;
+        box-shadow: none;
+    }
+
+    .toggle-button {
+        font-size: 2rem;
+        position: relative;
+        top: .75rem;
+        left: 1rem;
+        margin-bottom: 1.3em;
+    }
+    
+    .rules-list {
+        position: relative;
+        list-style: none;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        display: none;
+    }
+    
+    .rules-list li {
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+
+    #game-field {
+        margin: 12% 0 33% 0;
+    }
+
+    .the-winner-container {
+        padding-bottom: 14%;
     }
 }
 
@@ -403,6 +448,10 @@ text-align: center;
         margin-top: 1rem;
         margin-left: 2rem;
         display: none;
+    }
+
+    .the-winner-container {
+        padding-bottom: 18%;
     }
     
     .rules-list li {
