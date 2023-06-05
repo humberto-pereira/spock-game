@@ -42,6 +42,7 @@ text-align: center;
     justify-content:space-around;
 }
 
+
 .btn-hover{
     all: unset;
     cursor: pointer;
@@ -57,15 +58,21 @@ text-align: center;
 .toggle-button {
     font-size: 2rem;
     position: absolute;
-    top: .75rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.rules-span:hover {
+    color: #1f3756;
+    background-color: white;
     
 }
 
 .rules-list {
     position: absolute;
     list-style: none;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: 2rem;
     display: none;
 }
@@ -146,12 +153,16 @@ text-align: center;
 
 
 #player-hand {
+    padding-top: 3%;
+    position: absolute;
     width: 90px;
     margin-bottom: 23.76px;
     margin-left: 10px;
 }
 
 #computer-hand {
+    padding-top: 3%;
+    position: absolute;
     width: 90px;
     margin-bottom: 23.76px;
     margin-left: 10px;
@@ -173,7 +184,16 @@ text-align: center;
     color: lightgreen;
 }
 
+.the-winner-container {
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+}
+
 #the-winner {
+    position: absolute;
+    left: auto;
     font-size: 32px;
     text-align: center;
     margin-bottom: 0;
