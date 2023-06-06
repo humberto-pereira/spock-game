@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkWinner(playerChoice, computerChoice);
                 calculateTheWinner();
 
-            }, 1001)
+            }, 800)
         })
     }
     rulesMenu();
