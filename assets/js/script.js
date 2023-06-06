@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let playerChoice = this.getAttribute("data-type");
             let computerChoice = generateComputerChoice();
 
-
+            //add animation to player hand and computer hand
             let playerImageShake = document.getElementById("player-hand");
             let computerImageShake = document.getElementById("computer-hand");
             playerImageShake.classList.add("shake-player");
@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     rulesMenu();
 })
 
+/** 
+* Generates an random number and return a element from an array 
+*/
 function generateComputerChoice() {
     let computerChoiceArray = ["rock-computer", "lizard-computer", "paper-computer", "scissors-computer", "spock-computer"];
     let i = Math.floor(Math.random() * computerChoiceArray.length);
@@ -39,8 +42,11 @@ function generateComputerChoice() {
     return computerChoiceI;
 }
 
-// code based on Responsive Navbar Tutorial link and more details at readme.md
+// Code based on Responsive Navbar Tutorial link and more details at readme.md
 
+/**
+ * A simple dropdown menu
+ */
 function rulesMenu() {
     let rulesSpan = document.getElementsByClassName("rules-span")[0];
     let rulesList = document.getElementsByClassName("rules-list")[0];
@@ -50,7 +56,11 @@ function rulesMenu() {
 
 }
 
-//Check playerChoice against computerChoice and return the winner or a tie
+/** 
+ * Check playerChoice against computerChoice, return the winner of the match and add +1 to the winner 
+ * score or a tie +0, add  and remove css style trough classes
+*/
+
 function checkWinner(playerChoice, computerChoice) {
 
     let ruleElement = document.getElementById("winner-rule-point");
@@ -176,7 +186,9 @@ function checkWinner(playerChoice, computerChoice) {
     }
     numberOfMatches.textContent = parseInt(numberOfMatches.textContent) + 1;
 }
-
+/** 
+ * Return the choice image from a dictionary based on player choice and computer choice.
+*/
 function displayGameImage(playerChoice, computerChoice) {
 
     let imageDictionary = {
@@ -195,7 +207,7 @@ function displayGameImage(playerChoice, computerChoice) {
 
     let playerImageElement = document.getElementById("player-hand");
     let computerImageElement = document.getElementById("computer-hand");
-
+// Player choices
     if (playerChoice === "scissors-player") {
         playerImageElement.src = imageDictionary.scissorsPlayer;
     } else if (playerChoice === "rock-player") {
@@ -208,6 +220,7 @@ function displayGameImage(playerChoice, computerChoice) {
         playerImageElement.src = imageDictionary.spockPlayer;
     }
 
+    // Computer choice
     if (computerChoice === "scissors-computer") {
         computerImageElement.src = imageDictionary.scissorsComputer;
     } else if (computerChoice === "rock-computer") {
@@ -222,48 +235,42 @@ function displayGameImage(playerChoice, computerChoice) {
 }
 
 
+/**
+ * Calculate the winner, display winner text, add and remove css style trough classes 
+ */
 function calculateTheWinner() {
 
     let numberOfMatchesCalculate = parseInt(document.getElementById("matches-counter").textContent);
     let scorePlayerCalculate = parseInt(document.getElementById("player-score").textContent);
     let scoreComputerCalculate = parseInt(document.getElementById("computer-score").textContent);
     let theWinner = document.getElementById("the-winner");
-    let playerImageShake = document.getElementById("player-hand");
-    let computerImageShake = document.getElementById("computer-hand");
-    let theWinnerNoResize = document.querySelector("#game-field");
+
     if (numberOfMatchesCalculate === 5 && scorePlayerCalculate > scoreComputerCalculate) {
-        theWinner.textContent = `Congratulations Player Wins!!! =) \xa0 Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
+        theWinner.innerHTML = `Congratulations Player Wins!!! =)<br/> Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
         theWinner.classList.remove("winner-computer");
         theWinner.classList.add("winner-player");
-        playerImageShake.classList.remove("shake-player");
-        computerImageShake.classList.remove("shake-computer");
-        // theWinnerNoResize.style.margin = "40px 0 107px 0"
 
     } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate < scoreComputerCalculate) {
-        theWinner.textContent = `Computer Wins... =( \xa0 Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
+        theWinner.innerHTML = `Computer Wins... =(<br/> Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
         theWinner.classList.remove("winner-player");
         theWinner.classList.add("winner-computer");
-        playerImageShake.classList.remove("shake-player");
-        computerImageShake.classList.remove("shake-computer");
-        // theWinnerNoResize.style.margin = "40px 0 107px 0"
-
+        
     } else if (numberOfMatchesCalculate === 5 && scorePlayerCalculate === scoreComputerCalculate) {
-        theWinner.textContent = `It's a Tie No Winner! \xa0 Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
+        theWinner.innerHTML = `It's a Tie No Winner!<br/> Player: ${scorePlayerCalculate} \xa0 vs \xa0 Computer: ${scoreComputerCalculate}`;
         theWinner.classList.remove("winner-computer");
         theWinner.classList.remove("winner-player");
-        playerImageShake.classList.remove("shake-player");
-        computerImageShake.classList.remove("shake-computer");
-        // theWinnerNoResize.style.margin = "40px 0 107px 0"
-
     }
 
     if (numberOfMatchesCalculate === 6) {
-        alert("new game?");
+        alert("New Game?");
         resetGame();
     }
 
 }
 
+/**
+ * Reset all game elements
+ */
 function resetGame() {
 
     //Reset winner rule point
@@ -282,7 +289,7 @@ function resetGame() {
     document.getElementById("matches-counter").textContent = 0;
     //Reset the winner message
     document.getElementById("the-winner").textContent = "";
-    //Reset images
+    //Reset images to rock
     let playerImageReset = document.getElementById("player-hand");
     playerImageReset.src = "assets/images/icon-rock-player.svg";
 
