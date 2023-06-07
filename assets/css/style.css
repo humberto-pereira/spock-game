@@ -220,9 +220,11 @@ body {
 
 .computer-score-orange {
     color: orange ;
+    font-size: 1.4em;
 }
 
 .player-score-green {
+    font-size: 1.4em;
     color: lightgreen;
 }
 
