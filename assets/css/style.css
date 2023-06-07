@@ -181,7 +181,7 @@ body {
 #game-field {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0px 0 37px 0;
 }
 
@@ -204,18 +204,27 @@ body {
     padding-top: 45px;
 }
 
+.player-hand-container {
+    width: 139.602px;
+    margin: 0 0 0 10px;
+}
+
 #computer-hand {
     padding-top: 3%;
     position: absolute;
     width: 90px;
     height: 140px;
     margin-bottom: 23.76px;
-    margin-left: 10px;
+    margin-left: 28px;
     padding-top: 45px;
 }
 
+.computer-hand-container {
+    margin: 0;
+}
+
 #versus {
-    margin-top: 150px;
+    margin: 150px 150px 0 150px;
     font-size: 48px;
 }
 
@@ -240,7 +249,7 @@ body {
 }
 
 .the-winner-container {
-    padding-bottom: 7%;
+    padding-bottom: 10%;
     display: flex;
     justify-content: space-around;
     position:relative;
@@ -300,6 +309,15 @@ body {
         margin-top: 13%;
         
     }
+
+    #game-field {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #versus {
+        margin: 150px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -341,6 +359,15 @@ body {
     #game-field {
         margin: 15% 0 10% 0;
     }
+
+    #game-field {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #versus {
+        margin: 150px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -376,6 +403,10 @@ body {
         font-size: 21px;
     }
 
+    .the-winner-container {
+        padding-bottom: 18%;
+    }
+
     #game-field {
         margin: 0;
     }
@@ -383,6 +414,15 @@ body {
     #winner-rule-point {
         margin-top: 5%;
         
+    }
+
+    #game-field {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #versus {
+        margin: 150px 0 0 0;
     }
 }
 
@@ -416,7 +456,7 @@ body {
     }
 
     .the-winner-container {
-        padding-bottom: 15%;
+        padding-bottom: 20%;
     }
 
     #the-winner {
@@ -433,6 +473,14 @@ body {
         
     }
 
+    #game-field {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #versus {
+        margin: 150px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -460,7 +508,7 @@ body {
     }
 
     .the-winner-container {
-        padding-bottom: 14%;
+        padding-bottom: 20%;
     }
 
     #the-winner {
@@ -481,6 +529,16 @@ body {
         margin-top: 1%;
         
     }
+
+    #game-field {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #versus {
+        margin: 150px 0 0 0;
+    }
+
 }
 
 
@@ -509,7 +567,7 @@ body {
     }
 
     .the-winner-container {
-        padding-bottom: 18%;
+        padding-bottom: 28%;
     }
 
     #the-winner {
@@ -525,7 +583,42 @@ body {
         margin-top: 0;
         
     }
+    
+    #game-field {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
+    #versus {
+        font-size: 2em;
+        margin: 150px 0 0 0;
+    }
+    
+    .player-score-green {
+        font-size: 1em;
+    }
+
+    .computer-score-orange {
+        font-size: 1em;
+    }
+
+    #computer-hand {
+        width: auto;
+        height: auto;
+    }
+
+    #player-hand {
+        width: auto;
+        height: auto;
+    }
+
+    .player-hand-container {
+        width: auto;
+    }
+
+    #winner-rule-point {
+        font-size: 1em;
+    }
 }
 
 
