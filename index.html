@@ -8,6 +8,7 @@
     <title>Spock-Game</Spock-Game></title>
 </head>
 <body>
+    <!-- Rules Hamburger Menu -->
     <nav class="rules-navbar rules-span">
         <div id="hamburger-menu" class="toggle-button">
             <span class="bar"></span>
@@ -30,14 +31,17 @@
             <li>Rock crushes scissors</li>
         </ul>
     </nav>
+    <!-- Logo and Title -->
     <h1 class="title">Spock<img class="logo" src="assets/images/spock-game-logo.png" alt="">Game!</h1>
     <h3 class="sub-title">Rock, Paper, Scissors, Lizard, Spock</h3>
     <div class="game-container">
+        <!-- Show the player the match result and the rule applied -->
         <div id="rules">
             <h2 class="rule-container">
                 <span id="winner-rule-point">Welcome to Spock Game! Let's Play?</span>
             </h2>
         </div>
+        <!-- Game field show scores, player choice and computer choice images -->
         <div id="game-field">
             <div>
                 <img id="player-hand" src="assets/images/icon-rock-player.svg" alt="player hand">
@@ -49,11 +53,14 @@
                 <h3 class="computer-score-orange">Computer Score: <span class="computer-score-orange" id="computer-score">0</span></h3>
             </div>
         </div>
+        <!-- Show the text congratulate the winner or loser message -->
         <div class="the-winner-container">
             <!-- h1 empty but used by JavaScript to inject the winner message at the end of the game -->
             <h1 id="the-winner"></h1>
         </div>
+        <!-- Show number of matches played of a total of 5 -->
         <h2 id="matches">Matches: <span id="matches-counter">0</span> of 5</h2>
+        <!-- Container with all game choices, in a form of clickable images -->
         <div class="btn-container">
             <button data-type="rock-player" class="btn-hover">
                 <img class="btn-rock" src="assets/images/icon-rock-player.svg" alt="rock">
@@ -72,6 +79,7 @@
             </button>
         </div>
     </div>
+    <!-- Jigsaw seal -->
     <p>
         <a href="https://jigsaw.w3.org/css-validator/check/referer">
             <img style="border:0;width:88px;height:31px"
@@ -79,6 +87,7 @@
                 alt="CSS valid!" />
         </a>
     </p>
+    <!-- JavaScript file path -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

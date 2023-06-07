@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkWinner(playerChoice, computerChoice);
                 calculateTheWinner();
 
-            }, 800)
+            }, 900)
         })
     }
     rulesMenu();
 })
 
 /** 
-* Generates an random number and return a element from an array 
+* Generates an random number and return an random array element 
 */
 function generateComputerChoice() {
     let computerChoiceArray = ["rock-computer", "lizard-computer", "paper-computer", "scissors-computer", "spock-computer"];
@@ -58,7 +58,7 @@ function rulesMenu() {
 
 /** 
  * Check playerChoice against computerChoice, return the winner of the match and add +1 to the winner 
- * score or a tie +0, add  and remove css style trough classes
+ * score, or a tie +0 and add  and remove css style trough classes
 */
 
 function checkWinner(playerChoice, computerChoice) {
@@ -187,7 +187,7 @@ function checkWinner(playerChoice, computerChoice) {
     numberOfMatches.textContent = parseInt(numberOfMatches.textContent) + 1;
 }
 /** 
- * Return the choice image from a dictionary based on player choice and computer choice.
+ * Return the choice image from a dictionary based on player choice and computer random choice.
 */
 function displayGameImage(playerChoice, computerChoice) {
 

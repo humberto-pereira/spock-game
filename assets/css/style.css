@@ -176,14 +176,14 @@ body {
 }
 
 .shake-player {
-    animation: shake-player 1s linear;
+    animation: shake-player .7s linear;
 }
 
 .shake-computer {
-    animation: shake-computer 1s linear;
+    animation: shake-computer .7s linear;
 }
 
-
+/* Game interactive images */
 #player-hand {
     padding-top: 3%;
     position: absolute;
