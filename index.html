@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Welcome to the Rock, Paper, Scissors, Lizard, Spock Game! ">
+    <meta name="keywords" content="Play, Game, Fun, Rock Paper Scissors Online Game">
+    <meta name="author" content="Humberto Pereira">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <title>Spock-Game</Spock-Game></title>
+    <title>Spock-Game</title>
 </head>
 <body>
     <!-- Rules Hamburger Menu -->
@@ -34,13 +37,13 @@
     </nav>
     <!-- Logo and Title -->
     <h1 class="title">Spock<img class="logo" src="assets/images/spock-game-logo.png" alt="Logo with the Spock-Game text and the vulcan salute hand image between the two words">Game!</h1>
-    <h3 class="sub-title">Rock, Paper, Scissors, Lizard, Spock</h3>
+    <h2 class="sub-title">Rock, Paper, Scissors, Lizard, Spock</h2>
     <div class="game-container">
         <!-- Show the player the match result and the rule applied -->
         <div id="rules">
-            <h2 class="rule-container">
+            <h3 class="rule-container">
                 <span id="winner-rule-point">Welcome to Spock Game! Let's Play?</span>
-            </h2>
+            </h3>
         </div>
         <!-- Game field show scores, player choice and computer choice images -->
         <div id="game-field">
@@ -57,10 +60,10 @@
         <!-- Show the text congratulate the winner or loser message -->
         <div class="the-winner-container">
             <!-- h1 empty but used by JavaScript to inject the winner message at the end of the game -->
-            <h1 id="the-winner"></h1>
+            <h3 id="the-winner"></h3>
         </div>
         <!-- Show number of matches played of a total of 5 -->
-        <h2 id="matches">Matches: <span id="matches-counter">0</span> of 5</h2>
+        <h3 id="matches">Matches: <span id="matches-counter">0</span> of 5</h3>
         <!-- Container with all game choices, in a form of clickable images -->
         <div class="btn-container">
             <button data-type="rock-player" class="btn-hover">
