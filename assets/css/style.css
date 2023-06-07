@@ -27,6 +27,7 @@ body {
 .logo{
     filter: invert(100%);
     width: 48px;
+    height: 48px;
 }
 
 /* rules and matches interactive text */
@@ -36,7 +37,7 @@ body {
 }
 
 #winner-rule-point {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 2%;
     position: absolute;
 }
@@ -74,6 +75,14 @@ body {
     background-color:#fefffd;
 }
 
+.btn-size{
+    width: 45px;
+    height: 55px;
+}
+
+.btn-lizard{
+    width: 65px;
+}
 /* Hamburger rules drop down menu */
 .rules-navbar {
     margin: 1em 0 0 1em;
@@ -177,11 +186,11 @@ body {
 }
 
 .shake-player {
-    animation: shake-player .7s linear;
+    animation: shake-player .9s linear;
 }
 
 .shake-computer {
-    animation: shake-computer .7s linear;
+    animation: shake-computer .9s linear;
 }
 
 /* Game interactive images */
@@ -189,6 +198,7 @@ body {
     padding-top: 3%;
     position: absolute;
     width: 90px;
+    height: 140px;
     margin-bottom: 23.76px;
     margin-left: 10px;
     padding-top: 45px;
@@ -198,6 +208,7 @@ body {
     padding-top: 3%;
     position: absolute;
     width: 90px;
+    height: 140px;
     margin-bottom: 23.76px;
     margin-left: 10px;
     padding-top: 45px;
