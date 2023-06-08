@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="description" content="Welcome to the Rock, Paper, Scissors, Lizard, Spock Game! ">
-    <meta name="keywords" content="Play, Game, Fun, Rock Paper Scissors Online Game">
-    <meta name="author" content="Humberto Pereira">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <title>Spock-Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Welcome to the Rock, Paper, Scissors, Lizard, Spock Game! ">
+  <meta name="keywords" content="Play, Game, Fun, Rock Paper Scissors Online Game">
+  <meta name="author" content="Humberto Pereira">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <title>Spock-Game</title>
 </head>
 <body>
-    <!-- Rules Hamburger Menu -->
-    <nav class="rules-navbar rules-span">
-        <div id="hamburger-menu" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="toggle-button">
-            <span>Rules</span>
-        </div>
-        <ul class="rules-list">
-            <li>Scissors cut paper</li>
-            <li>Paper covers rock</li>
-            <li>Rock crushes lizard</li>
-            <li>Lizard poisons Spock</li>
-            <li>Spock smashes scissors</li>
-            <li>Scissors decapitate lizard</li>
-            <li>Lizard eats paper</li>
-            <li>Paper disproves Spock</li>
-            <li>Spock vaporizes rock</li>
-            <li>Rock crushes scissors</li>
-        </ul>
-    </nav>
-    <!-- Logo and Title -->
-    <h1 class="title">Spock<img class="logo" src="assets/images/spock-game-logo.png" alt="Logo with the Spock-Game text and the vulcan salute hand image between the two words">Game!</h1>
-    <h2 class="sub-title">Rock, Paper, Scissors, Lizard, Spock</h2>
-    <div class="game-container">
-        <!-- Show the player the match result and the rule applied -->
-        <div id="rules">
-            <h3 class="rule-container">
-                <span id="winner-rule-point">Welcome to Spock Game! Let's Play?</span>
-            </h3>
-        </div>
-        <!-- Game field show scores, player choice and computer choice images -->
-        <div id="game-field">
-            <div class="player-hand-container">
-                <img id="player-hand" src="assets/images/icon-rock-player.svg" alt="player hand with the rock as the initial image, and in sequence one of the five player choices image">
-                <h3 class="player-score-green">Player Score: <span class="player-score-green" id="player-score">0</span></h3>
-            </div>
-            <h3 id="versus">VS</h3>
-            <div class="computer-hand-container">
-                <img id="computer-hand" src="assets/images/icon-rock-computer.svg" alt="computer hand with the rock as the initial image, and in sequence one of the five computer random choices image">
-                <h3 class="computer-score-orange">Computer Score: <span class="computer-score-orange" id="computer-score">0</span></h3>
-            </div>
-        </div>
-        <!-- Show the text congratulate the winner or loser message -->
-        <div class="the-winner-container">
-            <!-- h1 empty but used by JavaScript to inject the winner message at the end of the game -->
-            <h3 id="the-winner"></h3>
-        </div>
-        <!-- Show number of matches played of a total of 5 -->
-        <h3 id="matches">Matches: <span id="matches-counter">0</span> of 5</h3>
-        <!-- Container with all game choices, in a form of clickable images -->
-        <div class="btn-container">
-            <button data-type="rock-player" class="btn-hover">
-                <img class="btn-rock btn-size" src="assets/images/icon-rock-player.svg" alt="rock-hand button choice">
-            </button>
-            <button data-type="paper-player" class="btn-hover">
-                <img class="btn-paper btn-size" src="assets/images/icon-paper-player.svg" alt="paper-hand button choice">
-            </button> 
-            <button data-type="scissors-player" class="btn-hover">
-                <img class="btn-scissors btn-size" src="assets/images/icon-scissors-player.svg" alt="scissors-hand button choice">
-            </button>
-            <button data-type="lizard-player" class="btn-hover">
-                <img class="btn-lizard btn-size" src="assets/images/icon-lizard-player.svg" alt="lizard-hand button choice">
-            </button>
-            <button data-type="spock-player" class="btn-hover">
-                <img class="btn-spock btn-size" src="assets/images/icon-spock-player.svg" alt="spock-hand button choice">
-            </button>
+  <!-- Rules Hamburger Menu -->
+  <nav class="rules-navbar rules-span">
+    <div id="hamburger-menu" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="toggle-button">
+        <span>Rules</span>
+    </div>
+    <ul class="rules-list">
+      <li>Scissors cut paper</li>
+      <li>Paper covers rock</li>
+      <li>Rock crushes lizard</li>
+      <li>Lizard poisons Spock</li>
+      <li>Spock smashes scissors</li>
+      <li>Scissors decapitate lizard</li>
+      <li>Lizard eats paper</li>
+      <li>Paper disproves Spock</li>
+      <li>Spock vaporizes rock</li>
+      <li>Rock crushes scissors</li>
+    </ul>
+  </nav>
+  <!-- Logo and Title -->
+  <h1 class="title">Spock<img class="logo" src="assets/images/spock-game-logo.png" alt="Logo with the Spock-Game text and the vulcan salute hand image between the two words">Game!</h1>
+  <h2 class="sub-title">Rock, Paper, Scissors, Lizard, Spock</h2>
+  <div class="game-container">
+    <!-- Show the player the match result and the rule applied -->
+    <div id="rules">
+      <h3 class="rule-container">
+        <span id="winner-rule-point">Welcome to Spock Game! Let's Play?</span>
+      </h3>
+    </div>
+    <!-- Game field show scores, player choice and computer choice images -->
+    <div id="game-field">
+      <div class="player-hand-container">
+        <img id="player-hand" src="assets/images/icon-rock-player.svg" alt="player hand with the rock as the initial image, and in sequence one of the five player choices image">
+        <h3 class="player-score-green">Player Score: <span class="player-score-green" id="player-score">0</span></h3>
+      </div>
+        <h3 id="versus">VS</h3>
+        <div class="computer-hand-container">
+          <img id="computer-hand" src="assets/images/icon-rock-computer.svg" alt="computer hand with the rock as the initial image, and in sequence one of the five computer random choices image">
+          <h3 class="computer-score-orange">Computer Score: <span class="computer-score-orange" id="computer-score">0</span></h3>
         </div>
     </div>
-    <!-- JavaScript file path -->
-    <script src="assets/js/script.js"></script>
+    <!-- Show the text congratulate the winner or loser message -->
+    <div class="the-winner-container">
+      <!-- h1 empty but used by JavaScript to inject the winner message at the end of the game -->
+      <h3 id="the-winner"></h3>
+    </div>
+    <!-- Show number of matches played of a total of 5 -->
+    <h3 id="matches">Matches: <span id="matches-counter">0</span> of 5</h3>
+    <!-- Container with all game choices, in a form of clickable images -->
+    <div class="btn-container">
+      <button data-type="rock-player" class="btn-hover">
+        <img class="btn-rock btn-size" src="assets/images/icon-rock-player.svg" alt="rock-hand button choice">
+      </button>
+      <button data-type="paper-player" class="btn-hover">
+        <img class="btn-paper btn-size" src="assets/images/icon-paper-player.svg" alt="paper-hand button choice">
+      </button> 
+      <button data-type="scissors-player" class="btn-hover">
+        <img class="btn-scissors btn-size" src="assets/images/icon-scissors-player.svg" alt="scissors-hand button choice">
+      </button>
+      <button data-type="lizard-player" class="btn-hover">
+        <img class="btn-lizard btn-size" src="assets/images/icon-lizard-player.svg" alt="lizard-hand button choice">
+      </button>
+      <button data-type="spock-player" class="btn-hover">
+        <img class="btn-spock btn-size" src="assets/images/icon-spock-player.svg" alt="spock-hand button choice">
+      </button>
+    </div>
+  </div>
+  <!-- JavaScript file path -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
