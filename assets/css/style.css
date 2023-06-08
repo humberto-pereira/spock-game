@@ -264,6 +264,36 @@ body {
 
 
 /* media queries */
+@media screen and (max-width: 1500px) {
+
+    #the-winner {
+        font-size: 26px;
+    }
+
+    .the-winner-container {
+        padding-bottom: 6%;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    #winner-rule-point {
+        margin-top: 0;
+    }
+
+    .sub-title {
+        margin: 1% 0 1.5% 0;
+    }
+
+    #game-field {
+        margin: 0;
+    }
+
+    .btn-container {
+        margin: 4px auto 0 auto;
+    }
+}
 
 @media screen and (max-width: 912px) {
     .title {
