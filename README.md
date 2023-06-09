@@ -5,6 +5,8 @@
 ## User story
 
 - As a game player, I want a intuitive and easy-to-understand mechanics so that I don't have to spend too much time reading through lengthy instructions. Additionally, I would like to see animations and interactive features instead of a static game. It's important that all game information is displayed in an easy-to-read format with good contrast and appropriate size. Ultimately, as a game player, I want to be challenged and have fun.
+<br>
+<br>
 
 # Wireframes 
 
@@ -22,22 +24,10 @@
 
 # DESIGN:
 
-## Color pallet
-
-- The color scheme of the web game is a gradient of two shades of blue and beige "skin-color", green , orange and white. The green represents the player, while the orange represents the computer. This provides sufficient contrast for all users. 
-
-<img src="assets/readme-md-images/color-pallet.png" width="600"/>
-
-## Font style
-
-The font style used for the game layout is the Bebas Neue "Google Fonts". However, if there are any font compatibility issues, the backup fonts include Tahoma, Verdana, and sans-serif. 
-
-<img src="assets/readme-md-images/google-fonts.png" width="600"/>
-
 # Spock Game
 <img src="assets/readme-md-images/responsive-screenshot.png" width="600"/>
 
-live link: https://humberto-pereira.github.io/spock-game/
+live link: <a href="https://humberto-pereira.github.io/spock-game/" target="_blank">Spock Game live link</a>
 
 - Welcome to Spock Game, the world of Rock Paper Scissors Lizard Spock! The game aims to bring a fresh twist to the classic game of Rock Paper Scissors by introducing two additional elements: Lizard and Spock. This project is designed to provide a fun and interactive gaming experience for players of all ages while also challenging their strategic thinking and decision-making skills.
 The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, enthusiasts of classic games. The game offers an entertaining way to engage in friendly competitions and test your abilities.
@@ -45,6 +35,31 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 <br>
 
 # Features
+
+## Color pallet
+
+- The color scheme of the web game is a gradient of two shades of blue and beige "skin-color", green , orange and white. The green represents the player, while the orange represents the computer. This provides sufficient contrast for all users. 
+
+<img src="assets/readme-md-images/color-pallet.png" width="600"/>
+<br>
+<br>
+
+## Font style
+
+- The font style used for the game layout is the Bebas Neue "Google Fonts". However, if there are any font compatibility issues, the backup fonts include Tahoma, Verdana, and sans-serif. 
+
+<img src="assets/readme-md-images/google-fonts.png" width="600"/>
+<br>
+<br>
+
+# Favicon
+
+- A favicon with the web game logo was added to help the user identify the browser tab easier
+
+<img src="assets/readme-md-images/favicon.png" width="600"/>
+<br>
+<br>
+
 ## logo
 
 - Our logo is designed with simplicity in mind, featuring Spock's iconic Vulcan Salute hand gesture from Star Trek, encompassed by the words "Spock Game."
@@ -68,7 +83,7 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 
 <img src="assets/readme-md-images/game-field.png" width="1200"/>
 
-- On the Game field, you can see the scores of both the player "green" and the computer "orange", along with a message indicating the winner of the match and the game rules. Additionally, the player's chosen image option is displayed under their score, while the computer's choice image is shown under its score, which is generated randomly by the game's AI.
+- On the Game field, you can see the scores of both the player "green" and the computer "orange", along with a message indicating the winner of the match, the game rules and +1 for the match winner or 0 when is a tie. Additionally, the player's chosen image option is displayed under their score, while the computer's choice image is shown under its score, which is generated randomly by the game's AI.
 <br>
 <br>
 
@@ -159,13 +174,20 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 ## Smart-Phone 320 x 568
 
 <img src="assets/readme-md-images/s-phone-320-568.png" width="600"/>
+<br>
+<br>
+# Technologies and tools used
+
+- Technologies: HTML, CSS and JavaScript.
+- Tools: Vs Code for all coding along with extensions like "auto close tag, auto rename tag, css peak and more", Balsamiq for the creation of the wireframes.
+<br>
+<br>
 
 # Validator Testing
 
+- HTML: No errors were returned when passing through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F" target="_blank">W3C Validator</a>
 
-- HTML: No errors were returned when passing through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F">W3C Validator</a>
-
-- CSS: No errors were found when passing through the official<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR"> (Jigsaw) validator</a>
+- CSS: No errors were found when passing through the official<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR" target="_blank"> (Jigsaw) validator</a>
 
 - JavaScript: No errors were found when passing through the eslint extension "the jshint vs code extension is deprecated," so alternatively, I used the "eslint," but I was not able to generate metrics like Love Maths readme.md example due to the "eslint" limitations. However, it pointed out some errors that have been fixed, so there are no errors in the JavaScript file.
 
@@ -182,6 +204,8 @@ just had to create a variable that receives the (return) of generateComputerChoi
 ## Unfixed Bugs
 
 - There are no known unfixed bugs, all the features and functionalities works as expected.
+<br>
+<br>
 
 # Deployment 
 
@@ -193,7 +217,30 @@ just had to create a variable that receives the (return) of generateComputerChoi
 - 5. At the Branch option, select Main; and ensure the root file is also chosen. 
 - 6. Click on Save. 
 - 7. Wait for a few seconds, then refresh the page. The deployed page will be live, and the webpage link will be displayed.
-- 8. The live link can be found here: https://humberto-pereira.github.io/spock-game/
+- 8. The live link can be found here:<a href="https://humberto-pereira.github.io/spock-game/" target="_blank">Spock Game live link</a>
+<br>
+<br>
+
+# Cloning  GitHub Repository
+- 1. Open your terminal or command prompt on your local machine.
+- 2. Navigate to the directory where you want to create the local copy of the repository.
+- 3. Go to the GitHub repository page that you want to clone.
+- 4. Click on the "Code" button located near the top right of the repository page.
+- 5. Click on the clipboard icon to copy the repository's URL.
+- 6. Return to your terminal or command prompt and type the following command:  git clone https://humberto-pereira.github.io/spock-game/
+- 7. Press Enter to execute the command.
+- 8. Wait for the cloning process to complete. Once finished, you will have a local copy of the GitHub repository on your machine.
+<br>
+<br>
+
+# Forking a GitHub Repository
+- 1. Go to the GitHub repository page that you want to fork in that case https://humberto-pereira.github.io/spock-game/.
+- 2. Click on the "Fork" button located at the top right corner of the repository page.
+- 3. Choose the GitHub account where you want to fork the repository. If you have multiple accounts, select the desired one.
+- 4. Wait for the forking process to complete. Once finished, you will be redirected to the forked repository page under your GitHub account.
+- 5. To create a local copy of the forked repository, follow the steps outlined in the "Cloning a GitHub Repository" section above.
+<br>
+<br>
 
 # Credits 
 
@@ -202,7 +249,7 @@ just had to create a variable that receives the (return) of generateComputerChoi
 - CSS and JavaScript: I used many documentation sources like https://www.w3schools.com/ - https://stackoverflow.com/ - https://developer.mozilla.org/en-US/ - Code Institute - Google and many more, rather than copying it, I tried to understand the concept and apply it, like Flexbox, media-queries, js functions, variables, arguments, event listeners and much more... 
 - The CSS hand-shaking animation and the JavaScript code were based on the youtube Code Grind channel <a href="https://www.youtube.com/watch?v=NTDBKgBY6JU&list=PLUNoBnR80iZAIwvgWg6vfvMLqmplYOz_f&index=1&t=1182s&ab_channel=CodeGrind">How to create Stone, Paper and Scissors Game using JavaScript! Complete tutorial | Code Grind</a> I customized it to fit the project's needs.
 - The hamburger menu code was based on the WebDev Simplified youtube channel <a href="https://www.youtube.com/watch?v=At4B7A4GOPg&list=PLUNoBnR80iZBxwFoCIjNbO8ZK3fMf0v1m&index=8&t=426s&ab_channel=WebDevSimplified">Responsive Navbar Tutorial</a> I also customized it to feet into the project needs.
-- But the most I extracted were from Code Institute <a href="https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md"> Love Maths </a> code, as commented in the JS code, like this snippet:<br>
+- The Code Institute <a href="https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md"> Love Maths </a> code, as commented in the JS code, like this snippet:<br>
  // based on the Love-Maths code<br>
  document.addEventListener('DOMContentLoaded', function () {<br>
     const clickedButtons = document.getElementsByTagName('button')<br>
