@@ -41,7 +41,7 @@ function generateComputerChoice () {
   return computerChoiceI
 }
 
-// Code based on Responsive Navbar Tutorial link and more details at readme.md
+// function rulesMenu() code based on Responsive Navbar Tutorial; link and more details at readme.md
 
 /**
  * A simple dropdown menu
