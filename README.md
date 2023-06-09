@@ -37,8 +37,10 @@ The font style used for the game layout is the Bebas Neue "Google Fonts". Howeve
 # Spock Game
 <img src="assets/readme-md-images/responsive-screenshot.png" width="600"/>
 
+live link: https://humberto-pereira.github.io/spock-game/
+
 - Welcome to Spock Game, the world of Rock Paper Scissors Lizard Spock! The game aims to bring a fresh twist to the classic game of Rock Paper Scissors by introducing two additional elements: Lizard and Spock. This project is designed to provide a fun and interactive gaming experience for players of all ages while also challenging their strategic thinking and decision-making skills.
-The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, enthusiasts of classic games, and anyone looking for a new and exciting take on a familiar concept. The game offers an entertaining way to engage in friendly competitions and test your abilities.
+The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, enthusiasts of classic games. The game offers an entertaining way to engage in friendly competitions and test your abilities.
 <br>
 <br>
 
@@ -157,3 +159,53 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 ## Smart-Phone 320 x 568
 
 <img src="assets/readme-md-images/s-phone-320-568.png" width="600"/>
+
+# Validator Testing
+
+
+- HTML: No errors were returned when passing through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F">W3C Validator</a>
+
+- CSS: No errors were found when passing through the official<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR"> (Jigsaw) validator</a>
+
+- JavaScript: No errors were found when passing through the eslint extension "the jshint vs code extension is deprecated," so alternatively, I used the "eslint," but I was not able to generate metrics like Love Maths readme.md example due to the "eslint" limitations. However, it pointed out some errors that have been fixed, so there are no errors in the JavaScript file.
+
+## Fixed Bugs Along the Way
+- Bug description#: I had problems figuring out how to pass computerChoice variable  as an argument; the solution was quite simple:<br>
+  const computerChoice = generateComputerChoice();<br>
+  checkWinner(playerChoice, computerChoice);<br>
+just had to create a variable that receives the (return) of generateComputerChoice(), and pass it through checkWinner(playerChoice, computerChoice) function.
+
+- Bug description#: I had problems with the Rules hamburger menu function: "rulesMenu()"; after implementation, it did not work; after trying many approaches and searching on the web found out that the solution was quite simple and obvious the function had to be called at the "DOMContentLoaded" function.
+- And many more bugs that have been fixed and learned lessons along the way.
+
+
+## Unfixed Bugs
+
+- There are no known unfixed bugs, all the features and functionalities works as expected.
+
+# Deployment 
+
+- The web-game was deployed at GitHub pages, with the following steps: 
+- 1. Select the desired repository to be deployed.
+- 2. Click on Settings. 
+- 3. Select Pages from the left side menu. 
+- 4. In the Source option, choose "Deploy from a branch." 
+- 5. At the Branch option, select Main; and ensure the root file is also chosen. 
+- 6. Click on Save. 
+- 7. Wait for a few seconds, then refresh the page. The deployed page will be live, and the webpage link will be displayed.
+- 8. The live link can be found here: https://humberto-pereira.github.io/spock-game/
+
+# Credits 
+
+- images: svg repo https://www.svgrepo.com/
+- images: https://www.pngegg.com/
+- CSS and JavaScript: I used many documentation sources like https://www.w3schools.com/ - https://stackoverflow.com/ - https://developer.mozilla.org/en-US/ - Code Institute - Google and many more, rather than copying it, I tried to understand the concept and apply it, like Flexbox, media-queries, js functions, variables, arguments, event listeners and much more... 
+- The CSS hand-shaking animation and the JavaScript code were based on the youtube Code Grind channel <a href="https://www.youtube.com/watch?v=NTDBKgBY6JU&list=PLUNoBnR80iZAIwvgWg6vfvMLqmplYOz_f&index=1&t=1182s&ab_channel=CodeGrind">How to create Stone, Paper and Scissors Game using JavaScript! Complete tutorial | Code Grind</a> I customized it to fit the project's needs.
+- The hamburger menu code was based on the WebDev Simplified youtube channel <a href="https://www.youtube.com/watch?v=At4B7A4GOPg&list=PLUNoBnR80iZBxwFoCIjNbO8ZK3fMf0v1m&index=8&t=426s&ab_channel=WebDevSimplified">Responsive Navbar Tutorial</a> I also customized it to feet into the project needs.
+- But the most I extracted were from Code Institute <a href="https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md"> Love Maths </a> code, as commented in the JS code, like this snippet:<br>
+ // based on the Love-Maths code<br>
+ document.addEventListener('DOMContentLoaded', function () {<br>
+    const clickedButtons = document.getElementsByTagName('button')<br>
+    for (const button of clickedButtons) {<br>
+      button.addEventListener('click', function () {<br>
+- I used and learned a lot through the Love Maths videos and code; I Used it as a reference to create my own code and web game, the Spock Game.

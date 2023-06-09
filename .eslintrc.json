@@ -1,13 +1,19 @@
 {
     "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": "standard",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "rules": {
-    }
+      "browser": true,
+      "es2021": true
+  },
+  "extends": "standard",
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "metrics"
+  ],
+  "rules": {
+      "metrics/metrics-definition": 2,
+      "metrics/metrics-documentation": 2
+  }
+    
 }
