@@ -54,7 +54,7 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 
 # Favicon
 
-- A favicon with the web game logo was added to help the user identify the browser tab easier
+- A favicon with the web game logo was added to help the user identify the browser tab easier.
 
 <img src="assets/readme-md-images/favicon.png" width="600"/>
 <br>
@@ -176,6 +176,7 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 <img src="assets/readme-md-images/s-phone-320-568.png" width="600"/>
 <br>
 <br>
+
 # Technologies and tools used
 
 - Technologies: HTML, CSS and JavaScript.
@@ -188,6 +189,12 @@ The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, e
 - HTML: No errors were returned when passing through the official <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F" target="_blank">W3C Validator</a>
 
 - CSS: No errors were found when passing through the official<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhumberto-pereira.github.io%2Fspock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR" target="_blank"> (Jigsaw) validator</a>
+
+- Chrome Light House 
+
+<img src="assets/readme-md-images/light-house.png" width="600"/>
+<br>
+<br>
 
 - JavaScript: No errors were found when passing through the eslint extension "the jshint vs code extension is deprecated," so alternatively, I used the "eslint," but I was not able to generate metrics like Love Maths readme.md example due to the "eslint" limitations. However, it pointed out some errors that have been fixed, so there are no errors in the JavaScript file.
 
@@ -217,7 +224,7 @@ just had to create a variable that receives the (return) of generateComputerChoi
 - 5. At the Branch option, select Main; and ensure the root file is also chosen. 
 - 6. Click on Save. 
 - 7. Wait for a few seconds, then refresh the page. The deployed page will be live, and the webpage link will be displayed.
-- 8. The live link can be found here:<a href="https://humberto-pereira.github.io/spock-game/" target="_blank">Spock Game live link</a>
+- 8. The live link can be found here: https://humberto-pereira.github.io/spock-game/
 <br>
 <br>
 
@@ -234,7 +241,7 @@ just had to create a variable that receives the (return) of generateComputerChoi
 <br>
 
 # Forking a GitHub Repository
-- 1. Go to the GitHub repository page that you want to fork in that case https://humberto-pereira.github.io/spock-game/.
+- 1. Go to the GitHub repository page that you want to fork in that case https://humberto-pereira.github.io/spock-game/
 - 2. Click on the "Fork" button located at the top right corner of the repository page.
 - 3. Choose the GitHub account where you want to fork the repository. If you have multiple accounts, select the desired one.
 - 4. Wait for the forking process to complete. Once finished, you will be redirected to the forked repository page under your GitHub account.
@@ -249,7 +256,7 @@ just had to create a variable that receives the (return) of generateComputerChoi
 - CSS and JavaScript: I used many documentation sources like https://www.w3schools.com/ - https://stackoverflow.com/ - https://developer.mozilla.org/en-US/ - Code Institute - Google and many more, rather than copying it, I tried to understand the concept and apply it, like Flexbox, media-queries, js functions, variables, arguments, event listeners and much more... 
 - The CSS hand-shaking animation and the JavaScript code were based on the youtube Code Grind channel <a href="https://www.youtube.com/watch?v=NTDBKgBY6JU&list=PLUNoBnR80iZAIwvgWg6vfvMLqmplYOz_f&index=1&t=1182s&ab_channel=CodeGrind">How to create Stone, Paper and Scissors Game using JavaScript! Complete tutorial | Code Grind</a> I customized it to fit the project's needs.
 - The hamburger menu code was based on the WebDev Simplified youtube channel <a href="https://www.youtube.com/watch?v=At4B7A4GOPg&list=PLUNoBnR80iZBxwFoCIjNbO8ZK3fMf0v1m&index=8&t=426s&ab_channel=WebDevSimplified">Responsive Navbar Tutorial</a> I also customized it to feet into the project needs.
-- The Code Institute <a href="https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md"> Love Maths </a> code, as commented in the JS code, like this snippet:<br>
+- The Code Institute <a href="https://github.com/humberto-pereira/love-maths/blob/main/assets/js/script.js"> Love Maths </a> code, as commented in the JS code, like this snippet:<br>
  // based on the Love-Maths code<br>
  document.addEventListener('DOMContentLoaded', function () {<br>
     const clickedButtons = document.getElementsByTagName('button')<br>
