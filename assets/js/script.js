@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         displayGameImage(playerChoice, computerChoice)
         checkWinner(playerChoice, computerChoice)
         calculateTheWinner()
-      }, 900)
+      }, 1000)
     })
   }
   rulesMenu()

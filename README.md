@@ -1,108 +1,159 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SPOCK GAME
 
-Welcome Humberto Pereira,
+## User Experience (UX)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## User story
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+- As a game player, I want a intuitive and easy-to-understand mechanics so that I don't have to spend too much time reading through lengthy instructions. Additionally, I would like to see animations and interactive features instead of a static game. It's important that all game information is displayed in an easy-to-read format with good contrast and appropriate size. Ultimately, as a game player, I want to be challenged and have fun.
 
-## Gitpod Reminders
+# Wireframes 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- The layout of the game and its javascript functionalities were based on the following wireframes
 
-`python3 -m http.server`
+## In course game 
+<img src="assets/readme-md-images/wframe-spock-game-match.png" width="600"/>
 
-A blue button should appear to click: _Make Public_,
+## End of the 5 matches
 
-Another blue button should appear to click: _Open Browser_.
+<img src="assets/readme-md-images/wframe-spock-game-final.png" width="600"/>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## mobile
+<img src="assets/readme-md-images/wframe-spock-game-mobile.png" width="600"/>
 
-A blue button should appear to click: _Make Public_,
+# DESIGN:
 
-Another blue button should appear to click: _Open Browser_.
+## Color pallet
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- The color scheme of the web game is a gradient of two shades of blue and beige "skin-color", green , orange and white. The green represents the player, while the orange represents the computer. This provides sufficient contrast for all users. 
 
-To log into the Heroku toolbelt CLI:
+<img src="assets/readme-md-images/color-pallet.png" width="600"/>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Font style
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The font style used for the game layout is the Bebas Neue "Google Fonts". However, if there are any font compatibility issues, the backup fonts include Tahoma, Verdana, and sans-serif. 
 
-------
+<img src="assets/readme-md-images/google-fonts.png" width="600"/>
 
-## Release History
+# Spock Game
+<img src="assets/readme-md-images/responsive-screenshot.png" width="600"/>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Welcome to Spock Game, the world of Rock Paper Scissors Lizard Spock! The game aims to bring a fresh twist to the classic game of Rock Paper Scissors by introducing two additional elements: Lizard and Spock. This project is designed to provide a fun and interactive gaming experience for players of all ages while also challenging their strategic thinking and decision-making skills.
+The Rock Paper Scissors Lizard Spock game is intended to target casual gamers, enthusiasts of classic games, and anyone looking for a new and exciting take on a familiar concept. The game offers an entertaining way to engage in friendly competitions and test your abilities.
+<br>
+<br>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# Features
+## logo
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Our logo is designed with simplicity in mind, featuring Spock's iconic Vulcan Salute hand gesture from Star Trek, encompassed by the words "Spock Game."
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<img src="assets/readme-md-images/logo.png" width="600"/>
+<br>
+<br>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Hamburger menu 
+<img src="assets/readme-md-images/rules-hamburger-menu.png" width="600"/>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- The Rules hamburger menu is located at the upper right side of the screen. Its purpose is to inform the game player about all possible win-and-lose scenarios.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Hamburger menu expanded
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="assets/readme-md-images/menu-expanded.png" width="600" height="800"/><br>
+<br>
+<br>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## The game field
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<img src="assets/readme-md-images/game-field.png" width="1200"/>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- On the Game field, you can see the scores of both the player "green" and the computer "orange", along with a message indicating the winner of the match and the game rules. Additionally, the player's chosen image option is displayed under their score, while the computer's choice image is shown under its score, which is generated randomly by the game's AI.
+<br>
+<br>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Buttons
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img src="assets/readme-md-images/buttons.png" width="600"/>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- Below the game field, you will find buttons displaying all five possible options in an easy-to-understand image format. Above these buttons, a text field indicates the number of matches out of a total of five that have been played.
+<br>
+<br>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Testing Game Features 
 
-------
+- The Rules hamburger menu: is expected to expand when clicked and display the rules without moving or resizing any other game element at screens above 912px with the (CSS position: absolute;) testing: The feature work flawlessly as expected.
 
-## FAQ about the uptime script
+- At mobile version screens under 912px, the hamburger menu is set as CSS position: relative; all layout moves down to make space for the rules list; it has this behavior because of a space meter; testing: the feature works flawlessly as expected.
 
-**Why have you added this script?**
+- The game field area: is expected to show the player score and computer score and should increment by one the score of the winner or no increment if its a tie; it should also show a text with the applicable game rule for the match clarifying who and why it's a win or loss; under the text of the score, is displayed the hands sign image, it should display the player choice and in the other side is the computer hand sign image choice generated randomly by the game AI; testing: All these features work as described and work flawlessly as expected.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- The buttons section: at the bottom of the layout, there is a container with five clickable hand sign images; when you click on the image of choice, it should trigger the animation of the image at the game field area, rotating 30 deg up and down three times, displaying the chosen image at the end of the animation, at the computer side happen the same but the image is chosen by the game AI; testing: All these features work as described and work flawlessly as expected.
 
-**How will this affect me?**
+- At the top of the button container, there is the match counter; it adds one to the counter every time that one button "hand sign image" is clicked and the animation is performed, the rule is displayed, and the scores are updated with the exception of a tie the scores don't change, but the matches number is updated with + one; when the match counter reaches 5 is the end of the game, then is displayed the winner message "player in green color or computer in orange color" and the final score, when you click in any of the buttons for the sixth time it displays an alert message "New Game?" when you click ok, it should reset all scores to zero and match counter to zero rules message to a welcome message, the winner message clears, and both hand images are displayed the rock hand sign image as initial images and its ready for another five matches; testing: All these features work as described and work flawlessly as expected.
+<br>
+<br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Testing Layout in Different Screen Sizes
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Desktop 1920 x 1200 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<img src="assets/readme-md-images/desktop-1920-1200.png" width="600"/>
+<br>
+<br>
 
-**So….?**
+## Desktop 1920 x 1080
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<img src="assets/readme-md-images/desktop-1920-1080.png" width="600"/>
+<br>
+<br>
 
-**Can I opt out?**
+## Laptop 1366 x 768
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<img src="assets/readme-md-images/laptop-1366-768.png" width="600"/>
+<br>
+<br>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Laptop 1024 x 800
 
-**Anything more?**
+<img src="assets/readme-md-images/laptop-1024-800.png" width="600"/>
+<br>
+<br>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Laptop 1024 x 600
 
----
+<img src="assets/readme-md-images/laptop-1024-600.png" width="600"/>
+<br>
+<br>
 
-Happy coding!
+## Tablet 768 x 1024
+
+<img src="assets/readme-md-images/tablet-768-1024.png" width="600"/>
+<br>
+<br>
+
+## Tablet 600 x 960
+
+<img src="assets/readme-md-images/tablet-600-960.png" width="600"/>
+<br>
+<br>
+
+## Smart-Phone 414 x 736
+
+<img src="assets/readme-md-images/s-phone-414-736.png" width="600"/>
+<br>
+<br>
+
+## Smart-Phone 375 x 667
+
+<img src="assets/readme-md-images/s-phone-375-667.png" width="600"/>
+<br>
+<br>
+
+## Smart-Phone 360 x 640
+
+<img src="assets/readme-md-images/s-phone-360-640.png" width="600"/>
+<br>
+<br>
+
+## Smart-Phone 320 x 568
+
+<img src="assets/readme-md-images/s-phone-320-568.png" width="600"/>
